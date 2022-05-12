@@ -29,7 +29,7 @@ npm install
 ### Latest releases
 1.1.1
 
-## Start the app
+## Start the App
 To start the app, use the following command:
 ```
 pbiviz start
