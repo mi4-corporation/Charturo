@@ -1,0 +1,107 @@
+svg.line-graph {
+  text {
+    cursor: default;
+  }
+  .hover-line {
+    stroke: #6e7b8b;
+  }
+  .hide {
+    opacity: 0;
+  }
+  .axis {
+    shape-rendering: crispEdges;
+  }
+  .x.axis {
+    line {
+      stroke: #d3d3d3;
+    }
+    .minor {
+      stroke-opacity: 0.5;
+    }
+    path {
+      display: none;
+    }
+    text {
+      font-size: 10px;
+    }
+  }
+  .y.axis {
+    line {
+      fill: none;
+      stroke: #000;
+    }
+    text {
+      font-size: 12px;
+    }
+  }
+  .scale-button {
+    &:not(.selected) {
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer !important;
+      }
+    }
+  }
+  .date-label {
+    fill: #6e7b8b;
+  }
+}
+.y.axis {
+  path {
+    fill: none;
+    stroke: #000;
+  }
+}
+
+g#xAxisGrid g.tick line {
+  stroke: #b6b6b6;
+  stroke-width: 1;
+}
+
+g#xAxisGrid path {
+  stroke: #ffffff;
+  stroke-width: 0;
+}
+
+g#y1AxisGrid g.tick line {
+  stroke: #b6b6b6;
+  stroke-width: 1;
+}
+
+g#y1AxisGrid path {
+  stroke: #ffffff;
+  stroke-width: 0;
+}
+
+.xAxisGridDotted {
+  stroke: #b6b6b6;
+  stroke-dasharray: 3;
+}
+
+.xAxisGridDashed {
+  stroke: #b6b6b6;
+  stroke-dasharray: 10;
+}
+.xAxisGridSolid {
+  stroke: #b6b6b6;
+  stroke-dasharray: 0;
+}
+
+.y1AxisGridDotted {
+  stroke: #b6b6b6;
+  stroke-dasharray: 3;
+}
+
+.y1AxisGridSolid {
+  stroke: #b6b6b6;
+  stroke-dasharray: 0;
+}
+
+.y1AxisGridDashed {
+  stroke: #b6b6b6;
+  stroke-dasharray: 10;
+}
+
+#legend {
+  flex:content
+}
